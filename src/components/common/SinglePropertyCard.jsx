@@ -1,0 +1,71 @@
+import { BiBed, BiMap, BiMapAlt, BiTab } from "react-icons/bi";
+import { Link } from "react-router-dom";
+import CardHoverIcons from "./CardHoverIcons";
+import CardLabels from "./CardLabels";
+const SingleProductCard = ({
+  name,
+  propIds,
+  location,
+  price,
+  status,
+  number_of_beds,
+  number_of_bathrooms,
+  area,
+  image,
+
+  category,
+}) => {
+  return (
+    <div
+      className={`basis-[45%] shadow-light border rounded-lg h-[370px]  overflow-hidden relative group`}
+    >
+      <div className="group !opacity-100 overflow-hidden relative">
+        <Link to={`/property-information/${propIds}`} className="!opacity-100">
+          <img
+            src={`${process.env.REACT_APP_SERVERURL}/static/${image}`}
+            alt={name}
+            className="w-full h-fit md:h-[250px] object-cover group-hover:scale-125 transition-a"
+          />
+        </Link>
+        <CardHoverIcons />
+        <div className="absolute bottom-0 left-0 w-full px-2 py-2 transition-transform bg-gradient-to-t from-black/80 sm:translate-y-10 group-hover:translate-y-0 to-transparent">
+          <div className="text-white flex-align-center gap-x-2">
+            <BiMap />
+            <p>{location?.address}</p>
+          </div>
+        </div>
+      </div>
+      <CardLabels status={status} price={price} />
+      <div className="p-3">
+        <Link
+          to={`/property-information/${propIds}`}
+          className=" transition-a justify-center"
+        >
+          <h1 className="text-lg font-bold capitalize ">{name}</h1>
+        </Link>
+        <div className="flex justify-between mt-3">
+          <div className="flex-align-center gap-x-2">
+            <div className="icon-box !w-7 !h-7 bg-primary/20 hover:!bg-primary/40 text-primary">
+              <BiBed />
+            </div>
+            <p className="text-sm">{number_of_beds} Beds</p>
+          </div>
+          <div className="flex-align-center gap-x-2">
+            <div className="icon-box !w-7 !h-7 bg-primary/20 hover:!bg-primary/40 text-primary">
+              <BiTab />
+            </div>
+            <p className="text-sm">{number_of_bathrooms} Bathrooms</p>
+          </div>
+          <div className="flex-align-center gap-x-2">
+            <div className="icon-box !w-7 !h-7 bg-primary/20 hover:!bg-primary/40 text-primary">
+              <BiMapAlt />
+            </div>
+            <p className="text-sm">{area} sq.ft</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default SingleProductCard;
