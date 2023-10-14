@@ -182,7 +182,7 @@ function Signup() {
                     placeholder="Enter phone number"
                     value={formData.phone}
                     onChange={(value) =>
-                      setFormData((state) => ({ ...state, phone: value }))
+                      setFormData((state) => ({ ...state, phoneNumber: value }))
                     }
                   />
                   {/* <input
