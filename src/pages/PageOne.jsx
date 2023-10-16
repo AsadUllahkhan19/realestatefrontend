@@ -256,7 +256,7 @@ const PageOne = () => {
       .get(`${process.env.REACT_APP_SERVERURL}/lov/category`)
       .then((res) => setcatOptions(res.data.data));
     axios
-      .get(`${process.env.REACT_APP_SERVERURL}/lov/purpos`)
+      .get(`${process.env.REACT_APP_SERVERURL}/lov/purpose`)
       .then((res) => setpurpOptions(res.data.data));
     axios
       .get(`${process.env.REACT_APP_SERVERURL}/lov/completion-status`)
