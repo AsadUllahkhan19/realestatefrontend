@@ -161,15 +161,15 @@ export default function Blog2() {
             <div className="col-span-12 md:col-span-3 bg-slate-50 p-7">
                 <section className="bg-white p-4 mt-14">
                     <h2 className="mb-8 text-2xl font-bold">Recent Posts</h2>
-                    <div style={{ textAlign: "start" }} className="font-semibold text-sm">|| <span>Tips for international/overseas investors in Dubai</span></div>
-                    <div style={{ textAlign: "start" }} className="font-semibold text-sm">|| <span>Why We Love Real Estate</span></div>
-                    <div style={{ textAlign: "start" }} className="font-semibold text-sm">|| <span>15 Tips To Follow About Real Estate</span></div>
-                    <div style={{ textAlign: "start" }} className="font-semibold text-sm">|| <span>13 Cheat Sheet On Real Estate</span></div>
+                    <div style={{ textAlign: "start" }} className="font-semibold text-sm flex items-center"><img src={ChevronRightIcon} width='8px' height='8px' className='mx-3' /> <span>Tips for international/overseas investors in Dubai</span></div>
+                    <div style={{ textAlign: "start" }} className="font-semibold text-sm flex items-center"><img src={ChevronRightIcon} width='8px' height='8px' className='mx-3' /> <span>Why We Love Real Estate</span></div>
+                    <div style={{ textAlign: "start" }} className="font-semibold text-sm flex items-center"><img src={ChevronRightIcon} width='8px' height='8px' className='mx-3' /> <span>15 Tips To Follow About Real Estate</span></div>
+                    <div style={{ textAlign: "start" }} className="font-semibold text-sm flex items-center"><img src={ChevronRightIcon} width='8px' height='8px' className='mx-3' /> <span>13 Cheat Sheet On Real Estate</span></div>
                 </section>
                 <section className="bg-white p-4 mt-14">
                     <h2 className="mb-5 text-2xl font-bold">Archives</h2>
-                    <div style={{ textAlign: "start" }} className="font-semibold text-sm">|| <span>November 2022</span></div>
-                    <div style={{ textAlign: "start" }} className="font-semibold text-sm">|| <span>March 2016</span></div>
+                    <div style={{ textAlign: "start" }} className="font-semibold text-sm flex items-center"><img src={ChevronRightIcon} width='8px' height='8px' className='mx-3' /> <span>November 2022</span></div>
+                    <div style={{ textAlign: "start" }} className="font-semibold text-sm flex items-center"><img src={ChevronRightIcon} width='8px' height='8px' className='mx-3' /> <span>March 2016</span></div>
                 </section>
             </div>
         </div>
