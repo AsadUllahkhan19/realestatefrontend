@@ -1,5 +1,6 @@
 import React from 'react'
 import LargeScreenWrapper from '../components/LargeScreenWrapper/LargeScreenWrapper'
+import LargeScreenWrapper from '../components/LargeScreenWrapper/LargeScreenWrapper'
 
 export default function Blog2() {
     return (
