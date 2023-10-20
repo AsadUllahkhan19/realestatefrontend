@@ -1,6 +1,6 @@
 import React from 'react'
 import LargeScreenWrapper from '../components/LargeScreenWrapper/LargeScreenWrapper';
-import LargeScreenWrapper from '../components/LargeScreenWrapper/LargeScreenWrapper'
+import ChevronRightIcon from '../assets/svgs/chevron-right.svg'
 
 export default function Blog1() {
     return (
