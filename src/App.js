@@ -34,6 +34,9 @@ import ManageListings from "./pages/ManageListings";
 import Portfolio from "./pages/Portfolio";
 import Reports from "./pages/Reports";
 import Traffic from "./pages/Traffic";
+import Blog1 from "./pages/Blog1";
+import Blog2 from "./pages/Blog2";
+import Blog3 from "./pages/Blog3";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -108,6 +111,9 @@ function App() {
               path="/property-information/:id"
               element={<PropertyInformation />}
             />
+            <Route path="/blog1" element={<Blog1 />} />
+            <Route path="/blog2" element={<Blog2 />} />
+            <Route path="/blog3" element={<Blog3 />} />
             <Route
               path="/property-management"
               element={<PropertyManagement />}

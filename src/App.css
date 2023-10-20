@@ -18,3 +18,7 @@
 .PhoneInputInput{
   background-color: transparent;
 }
+
+.scrollbar-hide-class::-webkit-scrollbar{
+  display: none;
+}

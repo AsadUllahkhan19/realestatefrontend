@@ -7,7 +7,7 @@ const BlogPost = ({ id, title, image, category, author, date_posted, description
   return (
     <div className="flex-1 basis-[20rem] shadow-light border rounded-lg overflow-hidden relative group">
     <div className="group !opacity-100 overflow-hidden">
-      <Link to={`/blog/${id}`} className="!opacity-100">
+      <Link to={`/blog${id}`} className="!opacity-100">
         <img
           src={image}
           alt={title}
@@ -21,7 +21,7 @@ const BlogPost = ({ id, title, image, category, author, date_posted, description
         by {author?.name}: {date_posted}
       </p>
       <Link
-        to={`/bolg/${id}`}
+        to={`/blog/${id}`}
         className="group-hover:text-primary transition-a"
       >
         <h1 className="text-lg font-semibold capitalize">{title}</h1>

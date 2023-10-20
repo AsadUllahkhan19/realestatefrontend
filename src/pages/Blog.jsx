@@ -1,12 +1,12 @@
 import React from 'react'
 import { BlogPostList } from '../components/common'
+import LargeScreenWrapper from '../components/LargeScreenWrapper/LargeScreenWrapper'
 
 const Blog = () => {
   return (
-    <div className='mt-[15vh]'>
-       
-    <BlogPostList/>
-    </div>
+    <LargeScreenWrapper>
+      <BlogPostList  />
+    </LargeScreenWrapper>
   )
 }
 
