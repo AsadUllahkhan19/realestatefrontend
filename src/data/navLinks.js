@@ -12,17 +12,17 @@ export const navLinks = [
   {
     id: 3,
     linkText: "Buy",
-    url: "/property/buy?show=all",
+    url: "/property/buy?category=all",
   },
   {
     id: 4,
     linkText: "Rent",
-    url: "/property/rent?show=all",
+    url: "/property/rent?category=all",
   },
   {
     id: 5,
     linkText: "Off-Plan",
-    url: "/property/offPlan?show=all",
+    url: "/property/offPlan?category=all",
   },
   {
     id: 6,
