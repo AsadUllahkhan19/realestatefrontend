@@ -26,7 +26,7 @@ export const property = [
     name: "Canal Cove Frond G, Canal Cove, Palm Jumeirah, Dubai",
     location: {
       plotno: "449J+HJH",
-      city:"The Palm Jumeirah",
+      city: "The Palm Jumeirah",
       country: "Dubai",
       state: "United Arab Emirates",
     },
@@ -39,9 +39,9 @@ export const property = [
     description:
       "We are proud to present this stunning four-bedroom plus maid, detached canal cove villa in the heart of Palm Jumeirah.",
     status: "Buy",
-    image: ["/images/property1.png" ,"/images/property2.png" ,"/images/property3.png" , "/images/property4.png", "images/card1.png", "images/card2.png", "images/card3.png" ], 
+    image: ["/images/property1.png", "/images/property2.png", "/images/property3.png", "/images/property4.png", "images/card1.png", "images/card2.png", "images/card3.png"],
     features: "Barbeque Area"
-  
+
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ export const property = [
     name: "Canal Cove Frond G, Canal Cove, Palm Jumeirah, Dubai",
     location: {
       plotno: "449J+HJH",
-      city:"The Palm Jumeirah",
+      city: "The Palm Jumeirah",
       country: "Dubai",
       state: "United Arab Emirates",
     },
@@ -61,8 +61,8 @@ export const property = [
     description:
       "We are proud to present this stunning four-bedroom plus maid, detached canal cove villa in the heart of Palm Jumeirah.",
     status: "Buy",
-    image: ["/images/property1.png" ,"/images/property2.png" ,"/images/property3.png" , "/images/property4.png" ], 
-  
+    image: ["/images/property1.png", "/images/property2.png", "/images/property3.png", "/images/property4.png"],
+
   },
   {
     id: 3,
@@ -70,7 +70,7 @@ export const property = [
     name: "Canal Cove Frond G, Canal Cove, Palm Jumeirah, Dubai",
     location: {
       plotno: "449J+HJH",
-      city:"The Palm Jumeirah",
+      city: "The Palm Jumeirah",
       country: "Dubai",
       state: "United Arab Emirates",
     },
@@ -82,8 +82,8 @@ export const property = [
     description:
       "We are proud to present this stunning four-bedroom plus maid, detached canal cove villa in the heart of Palm Jumeirah.",
     status: "Buy",
-    image: ["/images/property1.png" ,"/images/property2.png" ,"/images/property3.png" , "/images/property4.png" ], 
-  
+    image: ["/images/property1.png", "/images/property2.png", "/images/property3.png", "/images/property4.png"],
+
   },
   {
     id: 4,
@@ -91,7 +91,7 @@ export const property = [
     name: "Canal Cove Frond G, Canal Cove, Palm Jumeirah, Dubai",
     location: {
       plotno: "449J+HJH",
-      city:"The Palm Jumeirah",
+      city: "The Palm Jumeirah",
       country: "Dubai",
       state: "United Arab Emirates",
     },
@@ -103,8 +103,8 @@ export const property = [
     description:
       "We are proud to present this stunning four-bedroom plus maid, detached canal cove villa in the heart of Palm Jumeirah.",
     status: "Buy",
-    image: ["/images/property1.png" ,"/images/property2.png" ,"/images/property3.png" , "/images/property4.png" ], 
-  
+    image: ["/images/property1.png", "/images/property2.png", "/images/property3.png", "/images/property4.png"],
+
   },
   {
     id: 5,
@@ -112,7 +112,7 @@ export const property = [
     name: "Canal Cove Frond G, Canal Cove, Palm Jumeirah, Dubai",
     location: {
       plotno: "449J+HJH",
-      city:"The Palm Jumeirah",
+      city: "The Palm Jumeirah",
       country: "Dubai",
       state: "United Arab Emirates",
     },
@@ -124,19 +124,19 @@ export const property = [
     description:
       "We are proud to present this stunning four-bedroom plus maid, detached canal cove villa in the heart of Palm Jumeirah.",
     status: "Buy",
-    image: ["/images/property1.png" ,"/images/property2.png" ,"/images/property3.png" , "/images/property4.png" ], 
-  
+    image: ["/images/property1.png", "/images/property2.png", "/images/property3.png", "/images/property4.png"],
+
   },
 ];
 
-export const FeaturedProperty = [ 
+export const FeaturedProperty = [
   {
     id: 1,
     category: "Villa",
     name: "Canal Cove Frond G, Canal Cove, Palm Jumeirah, Dubai",
     location: {
       plotno: "449J+HJH",
-      city:"The Palm Jumeirah",
+      city: "The Palm Jumeirah",
       country: "Dubai",
       state: "United Arab Emirates",
     },
@@ -148,9 +148,9 @@ export const FeaturedProperty = [
     description:
       "We are proud to present this stunning four-bedroom plus maid, detached canal cove villa in the heart of Palm Jumeirah.",
     status: "Buy",
-    image: ["/images/explore2.png" ,"/images/property2.png" ,"/images/property3.png" , "/images/property4.png" ], 
+    image: ["/images/explore2.png", "/images/property2.png", "/images/property3.png", "/images/property4.png"],
     postedby: "afrin@macworldtechnology.com",
-  
+
   },
   {
     id: 1,
@@ -158,7 +158,7 @@ export const FeaturedProperty = [
     name: "Canal Cove Frond G, Canal Cove, Palm Jumeirah, Dubai",
     location: {
       plotno: "449J+HJH",
-      city:"The Palm Jumeirah",
+      city: "The Palm Jumeirah",
       country: "Dubai",
       state: "United Arab Emirates",
     },
@@ -170,7 +170,7 @@ export const FeaturedProperty = [
     description:
       "We are proud to present this stunning four-bedroom plus maid, detached canal cove villa in the heart of Palm Jumeirah.",
     status: "Buy",
-    image: ["/images/property3.png" ,"/images/property2.png" ,"/images/property3.png" , "/images/property4.png" ],
+    image: ["/images/property3.png", "/images/property2.png", "/images/property3.png", "/images/property4.png"],
     postedby: "afrin@macworldtechnology.com",
   },
 ]
@@ -182,7 +182,7 @@ export const testimonials = [
     role: "Front-end developer",
     image: "/images/avatar.png",
     reviewText:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis porro ex perferendis, nulla consectetur consequuntur odio qui adipisci harum earum dolor, eius accusantium quia praesentium.",
+      "Working with this Mac World's team was a game-changer. They found our dream home quickly and made the whole process a breeze!",
   },
   {
     id: 2,
@@ -190,7 +190,7 @@ export const testimonials = [
     role: "Backend engineer",
     image: "/images/avatar-1.png",
     reviewText:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis porro ex perferendis, nulla consectetur consequuntur odio qui adipisci harum earum dolor, eius accusantium quia praesentium.",
+      "Outstanding service from start to finish. Their expertise and dedication led to a smooth home sale. Highly recommended!",
   },
   {
     id: 3,
@@ -198,7 +198,7 @@ export const testimonials = [
     role: "UI Designer",
     image: "/images/avatar-2.png",
     reviewText:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis porro ex perferendis, nulla consectetur consequuntur odio qui adipisci harum earum dolor, eius accusantium quia praesentium.",
+      "I couldn't be happier with my new property. The agent's guidance was invaluable. Trustworthy, professional, and a true delight to work with.",
   },
 ];
 
@@ -255,9 +255,9 @@ export const feeds = [
   //     avatar: "/images/avatar.png",
   //   },
   // },
-  
-  
- 
+
+
+
 ];
 
 export const teamMembers = [
@@ -539,60 +539,61 @@ export const tags = [
   "Home",
 ];
 
-export const agent =[
+export const agent = [
   {
 
-    id:1,
-    name:"Abdullah",task:"Company Agent at Modern House Real Estate",
-    Office:"321321",
-    Mobile:"321456",
-    Fax:"7847297",
-    Email:"xyz@macworldtechnology.con"
+    id: 1,
+    name: "Abdullah", task: "Company Agent at Modern House Real Estate",
+    Office: "321321",
+    Mobile: "321456",
+    Fax: "7847297",
+    Email: "xyz@macworldtechnology.con"
   },
-  {  id:2,
-    name:"Rajja Farhan",task:"Company Agent at UAE Real Estate",
-    Office:"321321",
-    Mobile:"321456",
-    Fax:"7847297",
-    Email:"xyz@macworldtechnology.con"
+  {
+    id: 2,
+    name: "Rajja Farhan", task: "Company Agent at UAE Real Estate",
+    Office: "321321",
+    Mobile: "321456",
+    Fax: "7847297",
+    Email: "xyz@macworldtechnology.con"
   }, {
-    id:3,
-    name:"shiba Ibrahim",task:"Company Agent at UAE Real Estate",
-    Office:"321321",
-    Mobile:"321456",
-    Fax:"7847297",
-    Email:"xyz@macworldtechnology.con"
+    id: 3,
+    name: "shiba Ibrahim", task: "Company Agent at UAE Real Estate",
+    Office: "321321",
+    Mobile: "321456",
+    Fax: "7847297",
+    Email: "xyz@macworldtechnology.con"
   }, {
-    id:4,
-    name:"Muahammad Sana",task:"Company Agent at Modern House Real Estate",
-    Office:"321321",
-    Mobile:"321456",
-    Fax:"7847297",
-    Email:"xyz@macworldtechnology.con"
+    id: 4,
+    name: "Muahammad Sana", task: "Company Agent at Modern House Real Estate",
+    Office: "321321",
+    Mobile: "321456",
+    Fax: "7847297",
+    Email: "xyz@macworldtechnology.con"
   }
 ];
-export    const agents= [{
-  name:"Ali",
-  title:"Company Agent , UAE Real Estate",
-  desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta justo eget risus consectetur,...",
+export const agents = [{
+  name: "Sarah Anderson",
+  title: "Company Agent , 18 Bricks Real Estate ",
+  desc: "Dedicated Dubai agent with a keen eye for luxury properties, making dreams come true, one home at a time.",
   img: "./images/ouragent1.png"
 },
 {
-  name:"Ali",
-  title:"Company Agent , UAE Real Estate",
-  desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta justo eget risus consectetur,...",
+  name: "Mohammed Khan",
+  title: "Company Agent , 4 Ever Commercial",
+  desc: "An expert in Dubai's dynamic real estate market, known for his exceptional negotiation skills and market insights.",
   img: "./images/ouragent1.png"
 },
 {
-  name:"Ali",
-  title:"Company Agent , UAE Real Estate",
-  desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta justo eget risus consectetur,...",
+  name: "Elena Rodriguez",
+  title: "Company Agent , 7EI8HT6 Properties",
+  desc: "A Dubai real estate guru specializing in waterfront properties, delivering prime options with a personal touch.",
   img: "./images/ouragent1.png"
 },
 {
-  name:"Ali",
-  title:"Company Agent , UAE Real Estate",
-  desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta justo eget risus consectetur,...",
+  name: "Ahmed Al-Mansouri",
+  title: "Company Agent , 3G Real Estate",
+  desc: "Dubai's go-to agent for off-plan investments, guiding clients toward lucrative opportunities in the city's flourishing market.",
   img: "./images/ouragent1.png"
 }
 ];

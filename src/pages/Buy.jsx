@@ -36,7 +36,7 @@ const Buy = () => {
   const { slug } = useParams();
   const [MyURL] = useSearchParams();
   // const MyURL = new URLSearchParams(window.location.search);
-  const myParam = MyURL.get("show");
+  const myParam = MyURL.get("category");
   // console.log("dat213a", myParam);
   const propertydataArr = state.propertydataArr;
 
@@ -49,11 +49,11 @@ const Buy = () => {
   const [filteredData, setFilteredData] = useState(property);
 
   const [_isChecked, _setIsChecked] = useState(false);
-  const [selectedData, setSelectedData] = useState(MyURL.get("show"));
+  const [selectedData, setSelectedData] = useState(MyURL.get("category"));
 
   const [isChecked, setIsChecked] = useState(false);
   useEffect(() => {
-    setSelectedData(MyURL.get("show"));
+    setSelectedData(MyURL.get("category"));
   });
   useEffect(() => {
     BuyData(slug == "buy" ? "forSale" : slug, selectedData);
@@ -100,7 +100,7 @@ const Buy = () => {
             <span> &gt; </span>
             <Link to={`/property/${slug}?show=all`}>{slug}</Link>
             <span> &gt; </span>
-            <Link to={`/property/${slug}?show=${myParam}`}>
+            <Link to={`/property/${slug}?category=${myParam}`}>
               {myParam == "all" ? "" : myParam}
             </Link>
           </p>
@@ -111,17 +111,15 @@ const Buy = () => {
         <div>
           <div className="gap-2 flex-align-center">
             <div
-              className={`w-10 h-10 rounded-xl grid place-items-center bg-slate-100 hover:bg-slate-200 sm:cursor-pointer transition-a dark:bg-card-dark  ${
-                layout === "grid" && "!bg-primary text-white"
-              }`}
+              className={`w-10 h-10 rounded-xl grid place-items-center bg-slate-100 hover:bg-slate-200 sm:cursor-pointer transition-a dark:bg-card-dark  ${layout === "grid" && "!bg-primary text-white"
+                }`}
               onClick={() => setLayout("grid")}
             >
               <FiGrid />
             </div>
             <div
-              className={`w-10 h-10 rounded-xl grid place-items-center bg-slate-100 sm:cursor-pointer hover:bg-slate-200 transition-a dark:bg-card-dark ${
-                layout === "list" && "!bg-primary text-white"
-              }`}
+              className={`w-10 h-10 rounded-xl grid place-items-center bg-slate-100 sm:cursor-pointer hover:bg-slate-200 transition-a dark:bg-card-dark ${layout === "list" && "!bg-primary text-white"
+                }`}
               onClick={() => setLayout("list")}
             >
               <FaList />
@@ -143,11 +141,10 @@ const Buy = () => {
                 setSelectedData("all");
                 navigate(`/property/${slug}?show=all`);
               }}
-              className={`flex items-center space-x-[6px] rounded py-2 px-[18px] pr-[50px] text-lg font-medium ${
-                selectedData == "all"
+              className={`flex items-center space-x-[6px] rounded py-2 px-[18px] pr-[50px] text-lg font-medium ${selectedData == "all"
                   ? "text-primary bg-ordinary"
                   : "text-body-color"
-              }`}
+                }`}
             >
               All
             </button>
@@ -156,11 +153,10 @@ const Buy = () => {
                 setSelectedData("residential");
                 navigate(`/property/${slug}?show=residential`);
               }}
-              className={`flex items-center space-x-[6px] rounded py-2 px-[18px] pr-[50px] text-lg font-medium ${
-                selectedData == "residential"
-                  ? "text-primary bg-ordinary"
-                  : "text-body-color"
-              }`}
+              className={`flex items-center space-x-[6px] rounded py-2 px-[18px] pr-[50px] text-lg font-medium ${selectedData == "residential"
+                ? "text-primary bg-ordinary"
+                : "text-body-color"
+                }`}
             >
               Residential
             </button>
@@ -168,13 +164,12 @@ const Buy = () => {
             <button
               onClick={() => {
                 setSelectedData("commercial");
-                navigate(`/property/${slug}?show=commercial`);
+                navigate(`/property/${slug}?category=commercial`);
               }}
-              className={`flex items-center space-x-[6px] rounded py-2 px-[18px] pr-[50px] text-lg font-medium ${
-                selectedData == "commercial"
-                  ? "text-primary bg-ordinary"
-                  : "text-body-color"
-              }`}
+              className={`flex items-center space-x-[6px] rounded py-2 px-[18px] pr-[50px] text-lg font-medium ${selectedData == "commercial"
+                ? "text-primary bg-ordinary"
+                : "text-body-color"
+                }`}
             >
               Commercial
             </button>
@@ -182,29 +177,34 @@ const Buy = () => {
         </div>
       </div>
       <div
-        className={`grid my-20 h-full ${
-          layout === "grid" && "lg:grid-cols-4 gap-x-20"
-        } ${layout === "list" && "lg:grid-cols-3 gap-10"} px-20`}
+        className={`grid my-20 h-full ${layout === "grid" && "lg:grid-cols-4 gap-x-20"
+          } ${layout === "list" && "lg:grid-cols-3 gap-10"} px-20`}
       >
         {layout === "grid" ? (
           // <div className="flex flex-wrap h-full w-full col-span-3 gap-10">
           <div className="grid col-span-3 grid-cols-2 grid-rows-grid gap-x-10">
-            {propertydataArr?.map((item) => (
-              <div className="col-span-1 h-[380px">
-                <SinglePropertyCard
-                  propIds={item?._id}
-                  name={item?.propertyDetails.title}
-                  location={item?.locationAndAddress}
-                  price={item.propertyDetails.InclusivePrice}
-                  category={item?.typesAndPurpose.category}
-                  status={item?.propertyDetails.ownerShipStatus}
-                  number_of_bathrooms={item?.propertyDetails.bathRooms}
-                  number_of_beds={item?.propertyDetails.bedRooms}
-                  area={item?.propertyDetails.areaSquare}
-                  image={item?.upload?.images[0]}
-                />
-              </div>
-            ))}
+            {propertydataArr?.length > 0 ? propertydataArr?.map((item) => (
+              <ImpressionClickTrackerHOC
+                clickEvent={`ADD-TO-CART`}
+                disableViewportTracking={false}
+                userId={item?._id}
+              >
+                <div className="col-span-1 h-[380px">
+                  <SinglePropertyCard
+                    propIds={item?._id}
+                    name={item?.propertyDetails.title}
+                    location={item?.locationAndAddress}
+                    price={item.propertyDetails.InclusivePrice}
+                    category={item?.typesAndPurpose.category}
+                    status={item?.propertyDetails.ownerShipStatus}
+                    number_of_bathrooms={item?.propertyDetails.bathRooms}
+                    number_of_beds={item?.propertyDetails.bedRooms}
+                    area={item?.propertyDetails.areaSquare}
+                    image={item?.upload?.images[0]}
+                  />
+                </div>
+              </ImpressionClickTrackerHOC>
+            )) : <span class="mb-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">No data found.</span>}
           </div>
         ) : (
           <div className="grid col-span-2 grid-rows gap-4">
@@ -213,7 +213,7 @@ const Buy = () => {
                 <ImpressionClickTrackerHOC
                   clickEvent={`ADD-TO-CART`}
                   disableViewportTracking={false}
-                  userId = {item?._id}
+                  userId={item?._id}
                 >
                   <div className="w-full">
                     <ListPropertyCard

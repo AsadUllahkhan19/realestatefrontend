@@ -18,6 +18,7 @@ import {
 import Explore2 from "../components/home/home-1/Explore2";
 import Explore3 from "../components/home/home-1/Explore3";
 import { Store } from "../context/store";
+import AdvancedSearch from "../components/common/AdvancedSearch";
 
 const Home = () => {
   const { isLoading, featuredProperties } = useContext(Store);

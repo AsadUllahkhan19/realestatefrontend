@@ -21,7 +21,7 @@ const BlogPost = ({ id, title, image, category, author, date_posted, description
         by {author?.name}: {date_posted}
       </p>
       <Link
-        to={`/blog/${id}`}
+        to={`/blog${id}`}
         className="group-hover:text-primary transition-a"
       >
         <h1 className="text-lg font-semibold capitalize">{title}</h1>

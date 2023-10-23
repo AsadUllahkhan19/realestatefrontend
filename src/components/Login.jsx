@@ -90,7 +90,7 @@ function Admin({ setIsloggedIn }) {
                 className="bg-bgdrop appearance-none rounded-[15px] border-2 border-bgdrop w-full py-2 px-4 text-black leading-tight focus:outline-none focus:bg-gray focus:border-yellow-500 placeholder:text-black"
                 id="inline-full-name"
                 type="text"
-                placeholder="User ID"
+                placeholder="Email ID"
                 value={email}
                 onChange={handleUserName}
               />
@@ -100,7 +100,7 @@ function Admin({ setIsloggedIn }) {
                 className="bg-bgdrop appearance-none rounded-[15px] border-2 border-bgdrop w-full py-2 px-4 text-black leading-tight focus:outline-none focus:bg-gray focus:border-yellow-500 placeholder:text-black"
                 id="inline-full-name"
                 type="text"
-                placeholder=" Password"
+                placeholder="Password"
                 value={password}
                 onChange={handlePassword}
               />
@@ -132,7 +132,8 @@ function Admin({ setIsloggedIn }) {
           <div className="w-[50%] mx-auto flex flex-row gap-2 justify-center items-center p-10">
             <hr className="text-white w-[20%] mt-3" />
             <Link to="/signup">
-              <div className=" rounded-[20px]  bg-bgdrop shadow-lg bg-opacity-25 backdrop-filter backdrop-blur-lg text-white px-5 py-2">
+              {/* <div className=" rounded-[20px]  bg-bgdrop shadow-lg bg-opacity-25 backdrop-filter backdrop-blur-lg text-white px-5 py-2"> */}
+              <div className="rounded-[20px] font-bold bg-bgdrop shadow-lg  backdrop-filter backdrop-blur-lg px-5 py-2 bg-yellow-500">
                 Register
               </div>
             </Link>
